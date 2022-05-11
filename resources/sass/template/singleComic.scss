@@ -1,0 +1,24 @@
+.comics-container-single{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .comic-box-single{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid black;
+        border-radius: 20px;
+        width: 500px;
+        padding: 30px;
+        .img-comic{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 300px;
+            }
+        }
+        p{
+            padding: 10px 0;
+        }
+    }
+}

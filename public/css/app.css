@@ -46,3 +46,32 @@ a {
   text-align: center;
 }
 
+.comics-container-single {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.comics-container-single .comic-box-single {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 500px;
+  padding: 30px;
+}
+
+.comics-container-single .comic-box-single .img-comic {
+  display: flex;
+  justify-content: center;
+}
+
+.comics-container-single .comic-box-single .img-comic img {
+  width: 300px;
+}
+
+.comics-container-single .comic-box-single p {
+  padding: 10px 0;
+}
+
