@@ -48,14 +48,10 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        return view('ShowComic', [
-            "description"   =>$comic->description,
-            "thumb"         =>$comic->thumb,
-            "price"         =>$comic->price,
-            "series"        =>$comic->series,
-            "sale_date"     =>$comic->sale_date,
-            "type"          =>$comic->type,
-        ]);
+
+        $comics = Comic::all();
+
+        return view('ShowComic', compact('comics'));
     }
 
     /**
