@@ -1,3 +1,3 @@
 <footer>
-    FOOTER TIME
+    ----- FOOTER -----
 </footer>

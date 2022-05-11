@@ -19,6 +19,20 @@ a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
 .comics-container {
   display: flex;
   flex-wrap: wrap;
