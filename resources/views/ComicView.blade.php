@@ -10,7 +10,7 @@
 <body>
     <div class="comics-container">
         @foreach ($comics as $comic)
-            <a href="{{route("ShowComic", $comic->id)}}">
+            <a href="{{route("ShowComic", $comics->id)}}">
                 <div class="comic-box">
                     <img src="{{$comic->thumb}}" alt="">
                     <p>{{$comic->title}}</p>
