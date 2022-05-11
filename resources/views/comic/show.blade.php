@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h3>{{$comic->title}}</h3>
 </body>
 </html>
