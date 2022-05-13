@@ -15,6 +15,14 @@
             <p>PRICE: {{$comic->price}} $</p>
             <p>SERIES: {{$comic->series}}</p>
             <p>DATE: {{$comic->sale_date}}</p>
+            <form action="{{ route('comic.edit', $comic->id)}}">
+                <button>MODIFICA</button>
+            </form>
+            <form action="{{ route('comic.destroy', $comic->id)}}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button>CANCELLA</button>
+            </form>
         </div>
     </div>
 
