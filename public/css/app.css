@@ -92,6 +92,7 @@ footer {
 .container-form {
   display: flex;
   justify-content: center;
+  height: 700px;
 }
 
 .container-form form {
@@ -113,5 +114,11 @@ footer {
 
 .container-form form .comic-input input {
   padding: 20px;
+}
+
+.container-form form .alert-error {
+  color: red;
+  border: 2px solid red;
+  padding: 10px;
 }
 

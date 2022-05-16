@@ -1,6 +1,7 @@
 .container-form{
     display: flex;
     justify-content: center;
+    height: 700px;
     form{
         display: flex;
         flex-direction: column;
@@ -17,6 +18,11 @@
             input{
                 padding: 20px;
             }
+        }
+        .alert-error{
+            color: red;
+            border: 2px solid red;
+            padding: 10px;
         }
     }
 }

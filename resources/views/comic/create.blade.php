@@ -13,7 +13,7 @@
             </div>
 
             @error('thumb')
-                <span>{{ $message }}</span>
+                <div class="alert-error">{{ $message }}</div>
             @enderror
 
             <div class="comic-input">
@@ -22,7 +22,7 @@
             </div>
 
             @error('title')
-                <span>{{ $message }}</span>
+                <div class="alert-error">{{ $message }}</div>
             @enderror
 
             <div class="comic-input">
@@ -31,7 +31,7 @@
             </div>
 
             @error('description')
-                <span>{{ $message }}</span>
+                <div class="alert-error">{{ $message }}</div>
             @enderror
 
             <div class="comic-input">
@@ -40,7 +40,7 @@
             </div>
 
             @error('type')
-                <span>{{ $message }}</span>
+                <div class="alert-error">{{ $message }}</div>
             @enderror
 
             <div class="comic-input">
@@ -49,7 +49,7 @@
             </div>
 
             @error('price')
-                <span>{{ $message }}</span>
+                <div class="alert-error">{{ $message }}</div>
             @enderror
 
             <div class="comic-input">
@@ -58,7 +58,7 @@
             </div>
 
             @error('series')
-                <span>{{ $message }}</span>
+                <div class="alert-error">{{ $message }}</div>
             @enderror
 
             <div class="comic-input">
@@ -67,7 +67,7 @@
             </div>
 
             @error('sale_date')
-                <span>{{ $message }}</span>
+                <div class="alert-error">{{ $message }}</div>
             @enderror
 
             <button type="submit">INVIA DATI AL DATABASE</button>
