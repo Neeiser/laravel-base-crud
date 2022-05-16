@@ -7,11 +7,17 @@ use Illuminate\Http\Request;
 
 class ComicController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
+    protected $validation = [
+        'thumb'             =>  'nullable|url|max:255',
+        'title'             =>  'required|unique:comics|min:10|max:255',
+        'description'       =>  'nullable|min:25|max:255',
+        'type'              =>  'nullable|max:100',
+        'price'             =>  'required|numeric',
+        'series'            =>  'nullable|max:100',
+        'sale_date'         =>  'nullable|date',
+    ];
+
     public function index()
     {
         $comics = Comic::all();
@@ -37,6 +43,8 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate($this->validation);
+
         $comicForm = $request->all();
 
         $comic = new Comic();
